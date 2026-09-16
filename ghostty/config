@@ -1,0 +1,27 @@
+# Launch fish without changing the login shell
+command = /opt/homebrew/bin/fish
+
+# Colors live in themes/mine-dark and themes/mine-light (Solarized Light with a darker foreground)
+theme = light:mine-light,dark:mine-dark
+
+# Non-color settings
+font-family = Menlo
+font-size = 15
+
+window-padding-x = 14
+window-padding-y = 12
+
+cursor-style = block
+cursor-style-blink = false
+
+macos-option-as-alt = false
+window-save-state = always
+confirm-close-surface = false
+
+keybind = super+enter=text:\x07
+
+# cmd+b sends ctrl+b so herdr's prefix works here too
+keybind = super+b=text:\x02
+
+# macOS eats option+delete as an editing command, so send ESC DEL ourselves
+keybind = alt+backspace=text:\x1b\x7f

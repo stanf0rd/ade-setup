@@ -1,0 +1,43 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "show_wrap_guides": true,
+  "soft_wrap": "none",
+  "git_panel": {
+    "dock": "left"
+  },
+  "ui_font_weight": 400.0,
+  "buffer_line_height": "comfortable",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Colored Zed Icons Theme Light",
+    "dark": "Colored Zed Icons Theme Dark"
+  },
+  "auto_install_extensions": {
+    "solarized": true
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "session": {
+    "trust_all_worktrees": false
+  },
+  "terminal": {
+    "shell": {
+      "program": "/opt/homebrew/bin/fish"
+    }
+  },
+  "ui_font_size": 18.0,
+  "buffer_font_size": 15.0,
+  "theme": {
+    "mode": "system",
+    "light": "Solarized Light",
+    "dark": "Ayu Mirage",
+  },
+}
