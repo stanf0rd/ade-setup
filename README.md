@@ -1,7 +1,7 @@
 # dotfiles
 
 Light/dark theme setup that follows the macOS appearance, for Ghostty, fish, herdr, Zed and Claude Code.
-Dark colors are the hand-tuned ones; light is Solarized Light with a darker foreground.
+Dark colors are the hand-tuned ones; light is GitHub Light Default.
 
 ```sh
 git clone <this repo> ~/dotfiles && ~/dotfiles/install.sh
