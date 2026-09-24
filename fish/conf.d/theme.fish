@@ -6,7 +6,7 @@ fish_config theme choose mine
 function __theme_pure --argument-names mode
     switch $mode
         case light
-            set -g pure_color_current_directory 268bd2
+            set -g pure_color_current_directory 1a6fb0
             set -g pure_color_success 6c71c4
             set -g pure_color_prompt_on_success 6c71c4
             set -g pure_color_prompt_on_error dc322f

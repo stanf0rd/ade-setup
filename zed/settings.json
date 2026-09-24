@@ -37,7 +37,7 @@
   "buffer_font_size": 15.0,
   "theme": {
     "mode": "system",
-    "light": "Solarized Light",
+    "light": "Gruvbox Light",
     "dark": "Ayu Mirage",
   },
 }
