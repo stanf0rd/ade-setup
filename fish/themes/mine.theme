@@ -46,7 +46,7 @@ fish_color_host --reset
 fish_color_host_remote yellow
 fish_color_normal --reset
 fish_color_operator yellow
-fish_color_param 586e75
+fish_color_param 268bd2
 fish_color_quote yellow
 fish_color_redirection cyan --bold
 fish_color_search_match white --background=brblack --bold
