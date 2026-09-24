@@ -1,7 +1,7 @@
 # Launch fish without changing the login shell
 command = /opt/homebrew/bin/fish
 
-# Colors live in themes/mine-dark and themes/mine-light (GitHub Light Default)
+# Colors live in themes/mine-dark and themes/mine-light (Solarized Light with a darker foreground)
 theme = light:mine-light,dark:mine-dark
 
 # Non-color settings

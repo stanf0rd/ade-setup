@@ -6,11 +6,11 @@ fish_config theme choose mine
 function __theme_pure --argument-names mode
     switch $mode
         case light
-            set -g pure_color_current_directory 0969da
-            set -g pure_color_success 8250df
-            set -g pure_color_prompt_on_success 8250df
-            set -g pure_color_prompt_on_error cf222e
-            set -g pure_color_mute 6e7781
+            set -g pure_color_current_directory 1a6fb0
+            set -g pure_color_success 6c71c4
+            set -g pure_color_prompt_on_success 6c71c4
+            set -g pure_color_prompt_on_error dc322f
+            set -g pure_color_mute 93a1a1
         case '*'
             set -g pure_color_current_directory 73D0FF
             set -g pure_color_success DBF
