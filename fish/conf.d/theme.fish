@@ -6,7 +6,9 @@ fish_config theme choose mine
 function __theme_pure --argument-names mode
     switch $mode
         case light
-            set -g pure_color_current_directory 268bd2
+            # pure reads only the first word of a color, but follows a variable reference in full
+            set -g __theme_pure_dir 268bd2 --bold
+            set -g pure_color_current_directory __theme_pure_dir
             set -g pure_color_success 6c71c4
             set -g pure_color_prompt_on_success 6c71c4
             set -g pure_color_prompt_on_error dc322f
