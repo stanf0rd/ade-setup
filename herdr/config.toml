@@ -11,3 +11,9 @@ name = "catppuccin"
 auto_switch = true
 dark_name = "catppuccin"
 light_name = "solarized-light"
+
+# light-only: one Solarized step darker than the built-in solarized-light sidebar text
+[theme.custom.light]
+text = "#586e75"
+subtext0 = "#657b83"
+overlay0 = "#839496"
