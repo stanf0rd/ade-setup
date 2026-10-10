@@ -12,8 +12,35 @@ auto_switch = true
 dark_name = "catppuccin"
 light_name = "solarized-light"
 
-# light-only: one Solarized step darker than the built-in solarized-light sidebar text
+# overlay0 = subtext0 so secondary sidebar tokens (tab, agent, branch) match workspace titles
 [theme.custom.light]
 text = "#586e75"
 subtext0 = "#657b83"
-overlay0 = "#839496"
+overlay0 = "#657b83"
+
+[theme.custom.dark]
+overlay0 = "#a6adc8"
+
+[ui]
+sidebar_max_width = 60
+
+[ui.sidebar.spaces]
+row_gap = 1
+rows = [
+  ["state_icon", { token = "$ticket", fg = "#b58900", bold = true }, "workspace"],
+  ["git_status", "branch"],
+  # $a1..$a6: agents in this space, written by plugins/space-agents
+  [{ token = "$a1", rules = [{ starts_with = "●", fg = "#b58900" }, { starts_with = "!", fg = "#dc322f", bold = true }] }],
+  [{ token = "$a2", rules = [{ starts_with = "●", fg = "#b58900" }, { starts_with = "!", fg = "#dc322f", bold = true }] }],
+  [{ token = "$a3", rules = [{ starts_with = "●", fg = "#b58900" }, { starts_with = "!", fg = "#dc322f", bold = true }] }],
+  [{ token = "$a4", rules = [{ starts_with = "●", fg = "#b58900" }, { starts_with = "!", fg = "#dc322f", bold = true }] }],
+  [{ token = "$a5", rules = [{ starts_with = "●", fg = "#b58900" }, { starts_with = "!", fg = "#dc322f", bold = true }] }],
+  [{ token = "$a6", rules = [{ starts_with = "●", fg = "#b58900" }, { starts_with = "!", fg = "#dc322f", bold = true }] }],
+]
+
+[ui.sidebar.agents]
+row_gap = 1
+rows = [
+  ["state_icon", { token = "tab", bold = true, dim = false }, { token = "workspace", fg = "#b58900" }],
+  ["state_text", "agent"],
+]
