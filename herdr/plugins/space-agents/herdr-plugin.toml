@@ -1,0 +1,29 @@
+id = "local.space-agents"
+name = "Space agents"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+description = "List each workspace's agents inside its Space row ($a1..$a6 tokens)"
+platforms = ["macos"]
+
+[[startup]]
+command = ["sh", "sync.sh"]
+
+[[events]]
+on = "pane.agent_detected"
+command = ["sh", "sync.sh"]
+
+[[events]]
+on = "pane.agent_status_changed"
+command = ["sh", "sync.sh"]
+
+[[events]]
+on = "pane.closed"
+command = ["sh", "sync.sh"]
+
+[[events]]
+on = "pane.exited"
+command = ["sh", "sync.sh"]
+
+[[events]]
+on = "tab.renamed"
+command = ["sh", "sync.sh"]

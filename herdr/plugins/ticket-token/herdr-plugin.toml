@@ -1,0 +1,14 @@
+id = "local.ticket-token"
+name = "Ticket token"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+description = "Report $ticket (TP-NNNN from the git branch) on every workspace"
+platforms = ["macos"]
+
+# herdr drops tokens on restart, so rebuild them on startup and for new workspaces.
+[[startup]]
+command = ["sh", "sync.sh"]
+
+[[events]]
+on = "workspace.created"
+command = ["sh", "sync.sh"]
