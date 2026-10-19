@@ -20,7 +20,11 @@
     "dark": "Colored Zed Icons Theme Dark"
   },
   "auto_install_extensions": {
-    "solarized": true
+    "solarized": true,
+    "colored-zed-icons-theme": true,
+    "html": true,
+    "svelte": true,
+    "terraform": true
   },
   "project_panel": {
     "dock": "left"
