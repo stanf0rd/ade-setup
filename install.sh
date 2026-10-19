@@ -18,14 +18,16 @@ link fish/conf.d/theme.fish ~/.config/fish/conf.d/theme.fish
 link fish/themes/mine.theme ~/.config/fish/themes/mine.theme
 link herdr/config.toml      ~/.config/herdr/config.toml
 link zed/settings.json      ~/.config/zed/settings.json
+link claude/statusline.sh   ~/.claude/statusline.sh
 
-# Claude Code keeps other machine-local state in settings.json, so only the theme key is set.
+# Claude Code keeps other machine-local state in settings.json, so only the theme and status line keys are set.
 mkdir -p ~/.claude
 python3 - <<'PY'
 import json, os
 p = os.path.expanduser("~/.claude/settings.json")
 s = json.load(open(p)) if os.path.exists(p) else {}
 s["theme"] = "auto"
+s["statusLine"] = {"type": "command", "command": "~/.claude/statusline.sh", "refreshInterval": 5}
 json.dump(s, open(p, "w"), indent=2)
 PY
 echo "done. Ghostty: cmd+shift+, to reload. herdr: herdr server reload-config. fish: open a new shell."

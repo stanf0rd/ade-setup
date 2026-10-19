@@ -18,6 +18,7 @@ extension itself on its next start.
 | `fish/conf.d/theme.fish` | picks the theme and switches pure prompt colors on `fish_terminal_color_theme` |
 | `herdr/config.toml` | `[theme] auto_switch = true` |
 | `zed/settings.json` | `theme` and `icon_theme` in `mode: system` |
+| `claude/statusline.sh` | Claude Code status line: model · effort, lines changed vs main, context and 5h/7d limit bars in the prompt colors of the current appearance (needs `jq`) |
 
 `install.sh` symlinks the files. If an app ever rewrites its config and replaces a link with a plain
 file, `install.sh` keeps that file as `*.bak` next to the new link so nothing is lost.
